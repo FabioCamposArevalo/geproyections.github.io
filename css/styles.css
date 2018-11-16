@@ -1,0 +1,125 @@
+html {
+box-sizing: border-box;
+}
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif
+}
+.container {
+    margin: 50px auto;
+    max-width: 1100px;
+    width: 70%;
+}
+.nav {
+    background-image: url("../img/blur-caffeine-cappuccino-343425.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+    overflow: hidden;
+    position: relative;
+}
+.nav h1 {
+    position: absolute;
+    color: #f1f1f1;
+    font-size: 40px;
+    padding: 20px 40px;
+    z-index: 1;
+}
+
+.clear-fix {
+    content: '';
+    clear: both;
+    display: table;
+}
+.div-generations {
+    float: left;
+}
+.input-generations {
+    margin-bottom: 10px;
+}
+input {
+    color: #999999;
+    border: 1px solid #999;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 17px;
+}
+fieldset {
+    border: 1px solid #999;
+    padding: 20px;
+    margin-bottom: 50px;
+}
+button {
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 17px;
+    color: #f1f1f1;
+    background-color: #4CAF50;
+    padding: 10px;
+}
+.resultados {
+    float: right;
+    text-align: right;
+}
+.resultado {
+    float: right;
+}
+.check {
+    color: #555;
+    margin-top: 20px;
+}
+h3, legend {
+    color: #555;
+    font-size: 17px;
+}
+h3 {
+    display: inline-block;
+    font-weight: 100;
+    padding: 0 10px;
+    margin: 0;
+}
+.amount-result {
+    pointer-events: none;
+    text-align: right;
+    margin-bottom: 10px;
+}
+hr {
+    display: block;
+    width: 100%;
+}
+.total {
+    font-weight: 700;
+}
+.last-calc{
+    display: block;
+    margin: 20px 0;
+}
+.last-div {
+    overflow: hidden;
+}
+
+@media screen and (max-width: 500px){
+    .container {
+        width: 100%;
+    }
+    .div-generations {
+        width: 100%;
+        float: none;
+    }
+    button {
+        width: 100%;
+    }
+    input {
+        width: 100%;
+    }
+    .resultados {
+        float: none;
+        margin-top: 20px;
+    }
+}

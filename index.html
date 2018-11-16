@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Page Title</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="./css/styles.css" />
+  <script src="./js/directos.js"></script>
+  <script src="./js/generaciones.js"></script>
+  <script src="./js/compensaciones.js"></script>
+</head>
+
+<body>
+  <div>
+    <div class="nav">
+      <div class="picture">
+        <div class="navcontent">
+          <h1>Proyecciones GE</h1>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <fieldset>
+        <legend>Plan de pagos directos</legend>
+        <div>
+          <div class="div-generations">
+            <input class="input-generations" type="text" name="" id="input-left-generations" placeholder="Lado izquierdo"><br>
+            <input class="input-generations" type="text" name="" id="input-right-generations" placeholder="Lado derecho"><br>
+            <button onclick="calculateDirects()">Calcular</button>
+          </div>
+          <div class="resultados">
+
+            <div class="resultado clear-fix">
+              <h3>Puntos compensados</h3>
+              <input class="amount-result" type="text" name="" id="result-total-points-generations" placeholder="0">
+            </div>
+
+            <div class="resultado clear-fix">
+              <h3>Total por puntos compensados</h3>
+              <input class="amount-result" type="text" name="" id="result-money-points-generations" placeholder="$0">
+            </div>
+
+            <div class="resultado clear-fix">
+              <h3>Puntos no compensados </h3>
+              <input class="amount-result" type="text" name="" id="result-remained-points-generations" placeholder="0">
+            </div>
+
+            <div class="resultado clear-fix">
+              <h3>Total por puntos no compensados </h3>
+              <input class="amount-result" type="text" name="" id="result-money-remained-generations" placeholder="$0">
+            </div>
+
+            <div class="resultado clear-fix">
+              <h3>Total directos ingresados</h3>
+              <input class="amount-result" type="text" name="" id="result-total-added-generations" placeholder="0">
+            </div>
+
+
+            <div class="resultado clear-fix">
+              <h3>Total ganado por directos </h3>
+              <input class="amount-result" type="text" name="" id="result-money-added-generations" placeholder="$0">
+            </div>
+
+            <hr>
+
+            <div class="resultado clear-fix">
+              <h3 class="total">Total generado</h3>
+              <input class="amount-result" type="text" name="" id="result-money-generations" placeholder="$0">
+            </div>
+
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Plan de pagos por generaciones</legend>
+        <div>
+          <div class="div-generations">
+
+            <input class="input-generations" type="text" name="" id="input-generation-1" placeholder="Generación 1"><br>
+            <input class="input-generations" type="text" name="" id="input-generation-2" placeholder="Generación 2"><br>
+            <input class="input-generations" type="text" name="" id="input-generation-3" placeholder="Generación 3"><br>
+            <input class="input-generations" type="text" name="" id="input-generation-4" placeholder="Generación 4"><br>
+            <input class="input-generations" type="text" name="" id="input-generation-5" placeholder="Generación 5"><br>
+
+            <button onclick="calculateGenerations()">Calcular</button>
+          </div>
+          <div class="resultados">
+
+            <div class="resultado clear-fix">
+              <h3>Total generación 1</h3>
+              <input class="amount-result" type="text" name="" id="result-money-generations-1" placeholder="$0">
+            </div>
+
+            <div class="resultado clear-fix">
+              <h3>Total generación 2</h3>
+              <input class="amount-result" type="text" name="" id="result-money-generations-2" placeholder="$0">
+            </div>
+
+            <div class="resultado clear-fix">
+              <h3>Total generación 3</h3>
+              <input class="amount-result" type="text" name="" id="result-money-generations-3" placeholder="$0">
+            </div>
+
+            <div class="resultado clear-fix">
+              <h3>Total generación 4</h3>
+              <input class="amount-result" type="text" name="" id="result-money-generations-4" placeholder="$0">
+            </div>
+
+            <div class="resultado clear-fix">
+              <h3>Total generación 5</h3>
+              <input class="amount-result" type="text" name="" id="result-money-generations-5" placeholder="$0">
+            </div>
+
+            <hr>
+
+            <div class="resultado clear-fix">
+              <h3 class="total">Total generado</h3>
+              <input class="amount-result" type="text" name="" id="result-total-money-generations-2" placeholder="$0">
+            </div>
+
+          </div>
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Compensaciones binarias - Recompra</legend>
+        <div class="last-div">
+          <div class="div-generations">
+            <input class="input-generations" type="text" name="" id="input-binaries" placeholder="Parejas completadas"><br>
+            <button onclick="calculateBinaries()">Calcular</button>
+          </div>
+          <div class="resultados">
+
+            <div class="resultado clear-fix">
+              <h3>Total compensaciones binarias</h3>
+              <input class="amount-result" type="text" name="" id="result-money-binaries" placeholder="$0">
+            </div>
+          </div>
+        </div>
+        <hr class="last-calc">
+        <div class="last-div">
+          <div class="div-generations">
+            <input class="input-generations" type="text" name="" id="input-buy" placeholder="Parejas recompra"><br>
+            <button onclick="calculateBuy()">Calcular</button>
+          </div>
+          <div class="resultados">
+
+            <div class="resultado clear-fix">
+              <h3>Total por recompra</h3>
+              <input class="amount-result" type="text" name="" id="result-money-buy" placeholder="$0">
+            </div>
+          </div>
+        </div>
+      </fieldset>
+    </div>
+  </div>
+</body>
+
+</html>
